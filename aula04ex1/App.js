@@ -1,33 +1,42 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import type {Node} from 'react';
 import {
+  Image,
+  Linking,
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
+  TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
 
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
+const Link = ({ children, url }): Node => {
+  return (
+    <TouchableOpacity
+      style={{
+        flexDirection: "column",
+        flex: 1
+      }}
+      onPress={() => { Linking.openURL(url) }}
+    >
+      <Text style={{
+        color: "#0000EE",
+        fontSize: 15,
+        textDecorationLine: "underline",
+        marginTop: 10,
+      }}>
+        {children}
+      </Text>
+    </TouchableOpacity>
+  );
+};
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -41,15 +50,7 @@ const Section = ({children, title}): Node => {
         ]}>
         {title}
       </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+      {children}
     </View>
   );
 };
@@ -58,7 +59,7 @@ const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: isDarkMode ? Colors.darker : Colors.white,
   };
 
   return (
@@ -67,28 +68,32 @@ const App: () => Node = () => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
+      <ScrollView style={{ paddingVertical: 30 }}>
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
+          <Image source={require("./image.jpeg")}
+            style={{ width: 300, height: 300 }}
+          />
+        </View>
+        <View style={{ flex: 1, flexDirection: "column", }}>
+          <Section title="Dados Pessoais">
+            <Text style={[styles.sectionDescription, { color: isDarkMode ? Colors.light : Colors.dark, },]}>
+              Marina Gonzalez Lopes
+            </Text>
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
+          <Section title="Formação">
+            <Text style={[styles.sectionDescription, { color: isDarkMode ? Colors.light : Colors.dark, },]}>
+              Sistema para Internet - Fatec Baixada Santista
+            </Text>
           </Section>
-          <Section title="Debug">
-            <DebugInstructions />
+          <Section title="Experiencia">
+            <Text style={[styles.sectionDescription, { color: isDarkMode ? Colors.light : Colors.dark, },]}>
+              UX/UI Designer - 3 anos
+            </Text>
           </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
+          <Section title="Projetos">
+            <Link url="https://www.behance.net/gallery/135187361/Pinacotapp-UXUI-Mobile">Pinacotapp</Link>
+            <Link url="https://www.behance.net/gallery/136155539/RAGE-QUIT-UXUI-Designer">RAGE-QUIT</Link>
           </Section>
-          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
