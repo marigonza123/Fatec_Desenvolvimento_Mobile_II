@@ -51,7 +51,7 @@ const App = () => {
       />
       <ScrollView style={{ paddingVertical: 30 }}>
         <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <Text style={{ fontWeight: "bold", fontSize: 25, marginBottom: 10 }}>Alcool ou Gasolina</Text>
+          <Text style={{ fontWeight: "bold", fontSize: 25, marginBottom: 10 }}>Cálculo do IMC</Text>
           <Image source={require("./image.png")}
             style={{ width: 200, height: 200 }}
           />

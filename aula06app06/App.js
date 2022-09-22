@@ -32,7 +32,7 @@ const App = () => {
       />
       <ScrollView style={{ paddingVertical: 30 }}>
         <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <Text style={{ fontWeight: "bold", fontSize: 25, marginBottom: 10 }}>Alcool ou Gasolina</Text>
+          <Text style={{ fontWeight: "bold", fontSize: 25, marginBottom: 10 }}>Jogo do número aleatório</Text>
           <Image source={require("./image.jpeg")}
             style={{ width: 200, height: 150 }}
           />
