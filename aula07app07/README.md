@@ -1,4 +1,4 @@
-# Exercicio 02, aula 05
+# app 07, aula 07
 ### Projeto "Abertura de conta"
 
 ![](./app.png)
