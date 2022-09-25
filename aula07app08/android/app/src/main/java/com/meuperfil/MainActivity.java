@@ -1,4 +1,4 @@
-package com.aula05app02;
+package com.aula07app08;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "Aula05app02";
+    return "Aula07app08";
   }
 
   /**

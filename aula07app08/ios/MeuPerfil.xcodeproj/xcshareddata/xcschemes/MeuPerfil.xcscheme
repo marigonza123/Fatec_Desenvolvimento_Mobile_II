@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Aula05app02.app"
-               BlueprintName = "Aula05app02"
-               ReferencedContainer = "container:Aula05app02.xcodeproj">
+               BuildableName = "Aula07app08.app"
+               BlueprintName = "Aula07app08"
+               ReferencedContainer = "container:Aula07app08.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Aula05app02Tests.xctest"
-               BlueprintName = "Aula05app02Tests"
-               ReferencedContainer = "container:Aula05app02.xcodeproj">
+               BuildableName = "Aula07app08Tests.xctest"
+               BlueprintName = "Aula07app08Tests"
+               ReferencedContainer = "container:Aula07app08.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Aula05app02.app"
-            BlueprintName = "Aula05app02"
-            ReferencedContainer = "container:Aula05app02.xcodeproj">
+            BuildableName = "Aula07app08.app"
+            BlueprintName = "Aula07app08"
+            ReferencedContainer = "container:Aula07app08.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Aula05app02.app"
-            BlueprintName = "Aula05app02"
-            ReferencedContainer = "container:Aula05app02.xcodeproj">
+            BuildableName = "Aula07app08.app"
+            BlueprintName = "Aula07app08"
+            ReferencedContainer = "container:Aula07app08.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
