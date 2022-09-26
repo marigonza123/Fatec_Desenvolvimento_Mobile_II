@@ -2,7 +2,7 @@
 ## Exercicios / Apps feitos na matéria:
 - [Aula 02 - exercicio 1](./aula02ex1/)
 - [Aula 02 - exercicio 2](./aula02ex2/)
-- [Aula 04 - exercicio 1](./aula04ex1/)
+- [Aula 04 - app 01](./aula04ex1/)
 - [Aula 05 - app 02](./aula05app01)
 - [Aula 05 - app 03](./aula05app02)
 - [Aula 06 - app 04](./aula06app04/)
