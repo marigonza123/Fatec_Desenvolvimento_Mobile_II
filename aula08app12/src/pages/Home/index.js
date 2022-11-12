@@ -89,10 +89,6 @@ const HomePage = () => {
               UX/UI Designer - 3 anos
             </Text>
           </Section>
-          <Section title="Projetos">
-            <Link url="https://www.behance.net/gallery/135187361/Pinacotapp-UXUI-Mobile">Pinacotapp</Link>
-            <Link url="https://www.behance.net/gallery/136155539/RAGE-QUIT-UXUI-Designer">RAGE-QUIT</Link>
-          </Section>
         </View>
       </ScrollView>
     </SafeAreaView>
