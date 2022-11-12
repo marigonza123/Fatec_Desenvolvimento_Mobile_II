@@ -24,7 +24,7 @@ const App = () => {
             >
                 <Drawer.Screen
                     name="Home"
-                    options={{ title: "Abertura da conta", }}
+                    options={{ title: "Home", }}
                     component={HomePage} />
                 <Drawer.Screen
 
