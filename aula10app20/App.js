@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { StatusBar } from 'expo-status-bar';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FlatList, Image, StyleSheet, Switch, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 const api = axios.create({
@@ -8,8 +8,6 @@ const api = axios.create({
 })
 
 export default function App() {
-  const inputNameRef = useRef(false);
-  const [userIdInput, setUserIdInput] = useState(null);
   const [movies, setMovies] = useState(null)
 
   useEffect(() => {
